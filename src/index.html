@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CPS Services</title>
+</head>
+<body>
+  
+      <div class="wrapper">
+          <div class="blur"></div>
+        <header class="header">
+          <div class="menu">
+            <div class="menu-container">
+              <div class="menu-header">
+                <div class="menu-header__close-logo">
+                  <button class="menu-header__close header-btn">
+                    <img src="./img/menu/burgerClose.svg" alt="Закрыть меню">
+                  </button>
+                  <a href="#" class="menu-header__logo">
+                    <img src="./img/header.image/Logo.svg" alt="Лого" class="menu-header__logo">
+                  </a>
+                </div>
+                <button class="menu-header__search header-btn">
+                  <img src="./img/menu/menuSearch.svg" alt="Поиск">
+                </button>
+              </div>
+              <div class="menu-body">
+                <nav class="menu-nav">
+                  <ul class="menu-nav__list">
+                    <li class="menu-nav__item">
+                      <a href="#" class="menu-nav__link menu-nav__link-is-active">Ремонт техники</a>
+                    </li>
+                    <li class="menu-nav__item">
+                      <a href="#" class="menu-nav__link">Услуги и сервисы</a>
+                    </li>
+                    <li class="menu-nav__item">
+                      <a href="#" class="menu-nav__link">Корпоративным клиентам</a>
+                    </li>
+                    <li class="menu-nav__item">
+                      <a href="#" class="menu-nav__link">Продавцам техники</a>
+                    </li>
+                    <li class="menu-nav__item">
+                      <a href="#" class="menu-nav__link">Партнерам</a>
+                    </li>
+                    <li class="menu-nav__item">
+                      <a href="#" class="menu-nav__link">Производителям</a>
+                    </li>
+                    <li class="menu-nav__item">
+                      <a href="#" class="menu-nav__link">Наши сервисные центры</a>
+                    </li>
+                    <li class="menu-nav__item">
+                      <a href="#" class="menu-nav__link">Контакты</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="menu-footer">
+                <div class="menu-contacts">
+                  <div class="menu-contacts__contacts">
+                    <button class="menu-contacts__call header-btn">
+                      <img src="./img/menu/menuCall.svg" alt="Заказать звонок">
+                    </button>
+                    <button class="menu-contacts__chat header-btn">
+                      <img src="./img/menu/menuChat.svg" alt="Чат">
+                    </button>
+                    <button class="menu-contacts__profile header-btn">
+                      <img src="./img/menu/menuProfile.svg" alt="Профиль">
+                    </button>
+                  </div>
+                  <a href="mailto:mail@cps.com" class="menu-contacts__mail">mail@cps.com</a>
+                  <a href="tel:+78008908900" class="menu-contacts__tel">8 800 890 8900</a>
+                </div>
+                <div class="menu-lang">
+                  <a href="#" class="menu-lang__ru menu-lang__is-active">RU</a>
+                  <a href="#" class="menu-lang__en">EN</a>
+                  <a href="#" class="menu-lang__ch">CH</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-feedback">
+            
+            <button class="modal-feedback__close header-btn">
+              <img src="./img/menu/burgerClose.svg" alt="Закрыть меню" />
+            </button>
+  
+          <div class="modal-feedback__body">
+            <h1 class="modal-feedback__title">Обратная связь</h1>
+            <form action="#" class="form form-feedback" method="GET">
+              <input
+                type="text"
+                name="name"
+                placeholder="Имя"
+                class="input form-feedback__input"
+              />
+              <input
+                type="tel"
+                name="phone"
+                placeholder="Телефон"
+                class="input form-feedback__input"
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="Электронная почта"
+                class="input form-feedback__input"
+              />
+              <textarea
+                name="textarea"
+                placeholder="Сообщение"
+                class="input form-feedback__input--big"
+                rows="4"
+              ></textarea>
+              <p class="modal-feedback__description">
+                Нажимая “отправить”, вы даете согласие на
+                <a href="#" class="modal-feedback__personal-information"
+                  >обработку персональных данных</a
+                >
+                и соглашаетесь с нашей
+                <a href="#" class="modal-feedback__privacy-policy"
+                  >политикой конфиденциальности</a
+                >
+              </p>
+              <button type="submit" class="form-feedback__btn modal-btn">
+                ОТПРАВИТЬ
+                <img src="./img/main-price/goside.svg" class="form-feedback__btn-img" />
+              </button>
+            </form>
+          </div>
+          </div>
+          <div class="modal-call">
+            <div class="modal-call__header">
+              <button class="modal-call__close header-btn">
+                <img src="./img/menu/burgerClose.svg" alt="Закрыть меню" />
+              </button>
+            </div>
+    
+            <div class="modal-call__body">
+              <h1 class="modal-call__title">Заказать звонок</h1>
+              <input
+                type="tel"
+                name="phone"
+                placeholder="Телефон"
+                class="input call__input"
+              />
+              <p class="modal-call__description">
+                Нажимая “отправить”, вы даете согласие на
+                <a href="#" class="modal-call__personal-information"
+                  >обработку персональных данных</a
+                >
+                и соглашаетесь с нашей
+                <a href="#" class="modal-call__privacy-policy"
+                  >политикой конфиденциальности</a
+                >
+              </p>
+              <button type="submit" class="call__btn modal-btn">
+                ОТПРАВИТЬ
+                <img src="./img/main-price/goside.svg" class="call__btn-img" />
+              </button>
+            </div>
+          </div>
+          <div class="container header__container">
+            <div class="header__burger-logo">
+              <button class="header__burger-btn header-btn">
+                <img src="./img/header.image/burger.svg" alt="">
+              </button>
+              <a href="#" class="header__logo">
+                <img src="./img/header.image/Logo.svg" alt="Логотип">
+              </a>
+              
+            </div>
+            <div class="header__feedback">
+              <button class="header__feedback-call header-btn">
+                <img src="./img/header.image/call.svg" alt="">
+              </button>
+              <button class="header__feedback-chat header-btn">
+                <img src="./img/header.image/chat.svg" alt="">
+              </button>
+              <button class="header__feedback-profile header-btn">
+                <img src="./img/header.image/profile.svg" alt="">
+              </button>
+            </div>
+            <div class="header__repair-check">
+              <button class="header__repair-check-repair header-btn">
+                <img src="./img/header.image/repair.svg" alt="">
+              </button>
+              <button class="header__repair-check-checkstatus header-btn">
+                <img src="./img/header.image/checkstatus.svg" alt="">
+              </button>
+            </div>
+          </div>
+        </header>
+
+        <main class="main">
+          <div class="container main__container">
+          <div class="main-header">
+              <div class="main-header__title">
+                <h1 class="title">Услуги и сервисы</h1>
+                <div class="main-header__title-btn">
+                  <button class="main-header__title-btn-repair">
+                    Оставить заявку
+                    <img src="./img/header.image/repair.svg" class="main-header__title-btn-image">
+                  </button>
+                  <button class="main-header__title-btn-check">
+                    Статус ремонта
+                    <img src="./img/header.image/checkstatus.svg" class="main-header__title-btn-image">
+                  </button>
+                </div>
+              </div>
+              <div class="main-header__services-wrapper">
+              <div class="main-header__services-list">
+                <a href="#" class="main-header__services-links main-header__services-links--active">Ремонтируемые бренды</a>
+                <a href="#" class="main-header__services-links">Дополнительные услуги</a>
+                <a href="#" class="main-header__services-links">Цены на услуги</a>
+                <a href="#" class="main-header__services-links">Адреса сервисных центров</a>
+                <a href="#" class="main-header__services-links">Специальные цены</a>
+                <a href="#" class="main-header__services-links">Отзывы</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="main-description">
+            <div class="main-description__text">
+              <p class="main-description__about-us">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
+
+              Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
+              <div class="show-more-description">
+              <img src="./img/main-description.image/expand.svg" class="show-more-expand show-more-expand__description">
+              <button class="main-description__show-more show-more-btn">
+                Читать далее
+              </button>
+            </div>
+            </div>
+            <picture class="main-description__image">
+              <source srcset="./img/main-description.image/picture.image1440px.png" media="(min-width: 1440px)"/>
+              <source srcset="./img/main-description.image/picture.image768px.png" media="(min-width: 768px)"/>
+              <img src="./img/main-description.image/picture.image320px.png" alt="Лого и часы работы"/>
+            </picture>
+          </div>
+
+          <div class="main-repair-brand">
+            <div class="main-repair-brand__header">
+              <h3 class="main-repair-brand__title">Ремонт техники различных брендов</h3>
+            </div>  
+            <div class="repair-brand-container">
+              <div class="repair-brand-container__list">
+                <div class="repair-brand-container__item">
+                  <a href="" class="repair-brand-container__link">
+                    <img src="./img/repair-brands.image/lenovo.png" alt="" />
+                    <img src="./img/repair-brands.image/go.svg" alt="" />
+                  </a>
+                </div>
+                <div class="repair-brand-container__item">
+                  <a href="" class="repair-brand-container__link">
+                    <img src="./img/repair-brands.image/lenovo.png" alt="" />
+                    <img src="./img/repair-brands.image/go.svg" alt="" />
+                  </a>
+                </div>
+                <div class="repair-brand-container__item">
+                  <a href="" class="repair-brand-container__link">
+                    <img src="./img/repair-brands.image/lenovo.png" alt="" />
+                    <img src="./img/repair-brands.image/go.svg" alt="" />
+                  </a>
+                </div>
+                <div class="repair-brand-container__item">
+                  <a href="" class="repair-brand-container__link">
+                    <img src="./img/repair-brands.image/lenovo.png" alt="" />
+                    <img src="./img/repair-brands.image/go.svg" alt="" />
+                  </a>
+                </div>
+                <div class="repair-brand-container__item">
+                  <a href="" class="repair-brand-container__link">
+                    <img src="./img/repair-brands.image/lenovo.png" alt="" />
+                    <img src="./img/repair-brands.image/go.svg" alt="" />
+                  </a>
+                </div>
+                <div class="repair-brand-container__item">
+                  <a href="" class="repair-brand-container__link">
+                    <img src="./img/repair-brands.image/lenovo.png" alt="" />
+                    <img src="./img/repair-brands.image/go.svg" alt="" />
+                  </a>
+                </div>
+                <div class="repair-brand-container__item">
+                  <a href="" class="repair-brand-container__link">
+                    <img src="./img/repair-brands.image/lenovo.png" alt="" />
+                    <img src="./img/repair-brands.image/go.svg" alt="" />
+                  </a>
+                </div>
+                <div class="repair-brand-container__item">
+                  <a href="" class="repair-brand-container__link">
+                    <img src="./img/repair-brands.image/lenovo.png" alt="" />
+                    <img src="./img/repair-brands.image/go.svg" alt="" />
+                  </a>
+                </div>
+                <div class="repair-brand-container__item">
+                  <a href="" class="repair-brand-container__link">
+                    <img src="./img/repair-brands.image/lenovo.png" alt="" />
+                    <img src="./img/repair-brands.image/go.svg" alt="" />
+                  </a>
+                </div>
+                <div class="repair-brand-container__item">
+                  <a href="" class="repair-brand-container__link">
+                    <img src="./img/repair-brands.image/lenovo.png" alt="" />
+                    <img src="./img/repair-brands.image/go.svg" alt="" />
+                  </a>
+                </div>
+                <div class="repair-brand-container__item">
+                  <a href="" class="repair-brand-container__link">
+                    <img src="./img/repair-brands.image/lenovo.png" alt="" />
+                    <img src="./img/repair-brands.image/go.svg" alt="" />
+                  </a>
+                </div>
+              </div>
+              <div class="swiper swiper-repair-brand">
+                <div class="swiper-wrapper swiper-wrapper-repair-brand">
+                  <div class="swiper-slide swiper-slide-repair-brand">
+                    <div class="swiper-slide-repair-brand__item">
+                      <a href="" class="swiper-slide-repair-brand__link">
+                        <img src="./img/repair-brands.image/lenovo.png" alt="" />
+                        <img src="./img/repair-brands.image/go.svg" alt="" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide-repair-brand">
+                    <div class="swiper-slide-repair-brand__item">
+                      <a href="" class="swiper-slide-repair-brand__link">
+                        <img src="./img/repair-brands.image/lenovo.png" alt="" />
+                        <img src="./img/repair-brands.image/go.svg" alt="" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide-repair-brand">
+                    <div class="swiper-slide-repair-brand__item">
+                      <a href="" class="swiper-slide-repair-brand__link">
+                        <img src="./img/repair-brands.image/lenovo.png" alt="" />
+                        <img src="./img/repair-brands.image/go.svg" alt="" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide-repair-brand">
+                    <div class="swiper-slide-repair-brand__item">
+                      <a href="" class="swiper-slide-repair-brand__link">
+                        <img src="./img/repair-brands.image/lenovo.png" alt="" />
+                        <img src="./img/repair-brands.image/go.svg" alt="" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide-repair-brand">
+                    <div class="swiper-slide-repair-brand__item">
+                      <a href="" class="swiper-slide-repair-brand__link">
+                        <img src="./img/repair-brands.image/lenovo.png" alt="" />
+                        <img src="./img/repair-brands.image/go.svg" alt="" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide-repair-brand">
+                    <div class="swiper-slide-repair-brand__item">
+                      <a href="" class="swiper-slide-repair-brand__link">
+                        <img src="./img/repair-brands.image/lenovo.png" alt="" />
+                        <img src="./img/repair-brands.image/go.svg" alt="" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide-repair-brand">
+                    <div class="swiper-slide-repair-brand__item">
+                      <a href="" class="swiper-slide-repair-brand__link">
+                        <img src="./img/repair-brands.image/lenovo.png" alt="" />
+                        <img src="./img/repair-brands.image/go.svg" alt="" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide-repair-brand">
+                    <div class="swiper-slide-repair-brand__item">
+                      <a href="" class="swiper-slide-repair-brand__link">
+                        <img src="./img/repair-brands.image/lenovo.png" alt="" />
+                        <img src="./img/repair-brands.image/go.svg" alt="" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="swiper-pagination"></div>
+              </div>
+              <div class="show-more-repair-brand">
+                <img src="./img/main-description.image/expand.svg" class="show-more-expand__repair-brand show-more-expand">
+              <button class="repair-brand-container__show-more show-more-btn">
+                Показать всё
+              </button>
+            </div>
+            </div>
+          </div>
+
+          <div class="main-repair-tech">
+            <div class="main-repair-tech__header">
+              <h3 class="main-repair-tech__title">Ремонт различных видов техники</h3>
+            </div>  
+            <div class="repair-tech-container">
+              <div class="repair-tech-container__list">
+                <div class="repair-tech-container__item">
+                    <a href="" class="repair-tech-container__link"> Ремонт ноутбуков </a>
+                    <a href="" class="repair-tech-container__link-go"><img src="./img/repair-techs.image/go.svg" alt=""/></a>
+                </div>
+                <div class="repair-tech-container__item">
+                  <a href="" class="repair-tech-container__link"> Ремонт ноутбуков </a>
+                  <a href="" class="repair-tech-container__link-go"><img src="./img/repair-techs.image/go.svg" alt=""/></a>
+                </div>
+                <div class="repair-tech-container__item">
+                  <a href="" class="repair-tech-container__link"> Ремонт ноутбуков </a>
+                  <a href="" class="repair-tech-container__link-go"><img src="./img/repair-techs.image/go.svg" alt=""/></a>
+                </div>
+                <div class="repair-tech-container__item">
+                  <a href="" class="repair-tech-container__link"> Ремонт ноутбуков </a>
+                  <a href="" class="repair-tech-container__link-go"><img src="./img/repair-techs.image/go.svg" alt=""/></a>
+                </div>
+                <div class="repair-tech-container__item">
+                  <a href="" class="repair-tech-container__link"> Ремонт ноутбуков </a>
+                  <a href="" class="repair-tech-container__link-go"><img src="./img/repair-techs.image/go.svg" alt=""/></a>
+                </div>
+                <div class="repair-tech-container__item">
+                  <a href="" class="repair-tech-container__link"> Ремонт ноутбуков </a>
+                  <a href="" class="repair-tech-container__link-go"><img src="./img/repair-techs.image/go.svg" alt=""/></a>
+                </div>
+                <div class="repair-tech-container__item">
+                  <a href="" class="repair-tech-container__link"> Ремонт ноутбуков </a>
+                  <a href="" class="repair-tech-container__link-go"><img src="./img/repair-techs.image/go.svg" alt=""/></a>
+                </div>
+                <div class="repair-tech-container__item">
+                  <a href="" class="repair-tech-container__link"> Ремонт ноутбуков </a>
+                  <a href="" class="repair-tech-container__link-go"><img src="./img/repair-techs.image/go.svg" alt=""/></a>
+                </div>
+                <div class="repair-tech-container__item">
+                  <a href="" class="repair-tech-container__link"> Ремонт ноутбуков </a>
+                  <a href="" class="repair-tech-container__link-go"><img src="./img/repair-techs.image/go.svg" alt=""/></a>
+                </div>
+              </div>
+      
+              <div class="swiper swiper-repair-tech">
+                <div class="swiper-wrapper swiper-wrapper-repair-tech">
+                  <div class="swiper-slide swiper-slide-repair-tech">
+                    <div class="swiper-slide-repair-tech__item">
+                      <a href="" class="swiper-slide-repair-tech__link"> Ремонт ноутбуков </a>
+                    <a href="" class="swiper-slide-repair-tech__link-go"><img src="./img/repair-techs.image/go.svg" alt=""/></a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide-repair-tech">
+                    <div class="swiper-slide-repair-tech__item">
+                      <a href="" class="swiper-slide-repair-tech__link"> Ремонт планшетов  </a>
+                    <a href="" class="swiper-slide-repair-tech__link-go"><img src="./img/repair-techs.image/go.svg" alt=""/></a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide-repair-tech">
+                    <div class="swiper-slide-repair-tech__item">
+                      <a href="" class="swiper-slide-repair-tech__link"> Ремонт ПК </a>
+                    <a href="" class="swiper-slide-repair-tech__link-go"><img src="./img/repair-techs.image/go.svg" alt=""/></a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide-repair-tech">
+                    <div class="swiper-slide-repair-tech__item">
+                      <a href="" class="swiper-slide-repair-tech__link"> Ремонт  мониторов </a>
+                    <a href="" class="swiper-slide-repair-tech__link-go"><img src="./img/repair-techs.image/go.svg" alt=""/></a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide-repair-tech">
+                    <div class="swiper-slide-repair-tech__item">
+                      <a href="" class="swiper-slide-repair-tech__link"> Ремонт ноутбуков </a>
+                    <a href="" class="swiper-slide-repair-tech__link-go"><img src="./img/repair-techs.image/go.svg" alt=""/></a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide-repair-tech">
+                    <div class="swiper-slide-repair-tech__item">
+                      <a href="" class="swiper-slide-repair-tech__link"> Ремонт планшетов </a>
+                    <a href="" class="swiper-slide-repair-tech__link-go"><img src="./img/repair-techs.image/go.svg" alt=""/></a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide-repair-tech">
+                    <div class="swiper-slide-repair-tech__item">
+                      <a href="" class="swiper-slide-repair-tech__link"> Ремонт ПК </a>
+                    <a href="" class="swiper-slide-repair-tech__link-go"><img src="./img/repair-techs.image/go.svg" alt=""/></a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide-repair-tech">
+                    <div class="swiper-slide-repair-tech__item">
+                      <a href="" class="swiper-slide-repair-tech__link"> Ремонт  мониторов </a>
+                    <a href="" class="swiper-slide-repair-tech__link-go"><img src="./img/repair-techs.image/go.svg" alt=""/></a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide-repair-tech">
+                    <div class="swiper-slide-repair-tech__item">
+                      <a href="" class="swiper-slide-repair-tech__link"> Ремонт ноутбуков </a>
+                    <a href="" class="swiper-slide-repair-tech__link-go"><img src="./img/repair-techs.image/go.svg" alt=""/></a>
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="swiper-pagination"></div>
+              </div>
+              <div class="show-more-repair-tech">
+              <img src="./img/main-description.image/expand.svg" class="show-more-expand show-more-expand__repair-tech">
+              <button class="repair-tech-container__show-more show-more-btn">
+                
+                Показать всё
+              </button>
+            </div>
+            </div>
+          </div>
+
+          <div class="main-price">
+            <div class="main-price__header">
+              <h3 class="main-price__title">Цены на услуги</h3>
+            </div>
+      
+            <div class="main-price-container">
+              <div class="main-price-container__services">
+                  <div class="main-price-container__services-title">
+                    <div class="main-price-container__services-title--text">Ремонтные услуги</div>
+                    <div class="main-price-container__services-title--text">Цена</div>
+                    <div class="main-price-container__services-title--text">Срок</div>
+                  </div>
+                  <div class="main-price-container__services-wrapper">
+                  <div class="main-price-container__services-about--row">
+                    <div class="main-price-container__services-about--text">Диагностика</div>
+                    <div class="main-price-container__services-about--text">Бесплатно</div>
+                    <div class="main-price-container__services-about--text">30 мин</div>
+                    <div class="main-price-container__services-about--text"><a href="#" class="swiper-slide-link">Заказать</a></div>
+                  </div>
+                  <div class="main-price-container__services-about--row">
+                    <div class="main-price-container__services-about--text">Замена дисплея</div>
+                    <div class="main-price-container__services-about--text">1 000 ₽</div>
+                    <div class="main-price-container__services-about--text">30-120 мин</div>
+                    <div class="main-price-container__services-about--text"><a href="#" class="swiper-slide-link">Заказать</a></div>
+                  </div>
+                  <div class="main-price-container__services-about--row">
+                    <div class="main-price-container__services-about--text">Замена полифонического динамика</div>
+                    <div class="main-price-container__services-about--text">1 000 ₽</div>
+                    <div class="main-price-container__services-about--text">30-120 мин</div>
+                    <div class="main-price-container__services-about--text"><a href="#" class="swiper-slide-link">Заказать</a></div>
+                  </div>
+                  <div class="main-price-container__services-about--row">
+                    <div class="main-price-container__services-about--text">Тестирование с выдачей технического заключения</div>
+                    <div class="main-price-container__services-about--text">1 000 ₽</div>
+                    <div class="main-price-container__services-about--text">30-120 мин</div>
+                    <div class="main-price-container__services-about--text"><a href="#" class="swiper-slide-link">Заказать</a></div>
+                  </div>
+                  <div class="main-price-container__services-about--row">
+                    <div class="main-price-container__services-about--text">Замена программного обеспечения</div>
+                    <div class="main-price-container__services-about--text">1 000 ₽</div>
+                    <div class="main-price-container__services-about--text">30-120 мин</div>
+                    <div class="main-price-container__services-about--text"><a href="#" class="swiper-slide-link">Заказать</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper swiper-price">
+                <div class="swiper-wrapper swiper-wrapper-price">
+                  <div class="swiper-slide swiper-slide-price">
+                    <div class="swiper-slide-price__item">
+                      <div class="swiper-slide-price__repair-services">
+                        <div class="swiper-slide-price__repair-services-title-text">
+                          Ремонтные услуги
+                        </div>
+                        <div class="swiper-slide-price__repair-services-text">
+                          Тестирование с выдачей технического заключения
+                        </div>
+                      </div>
+                      <div class="swiper-slide-price__price">
+                        <div class="swiper-slide-price__repair-services-title-text">
+                          Цена
+                        </div>
+                        <div class="swiper-slide-price__price-text">Бесплатно</div>
+                      </div>
+                      <div class="swiper-slide-price__about-time">
+                        <div class="swiper-slide-price__time">
+                          <div class="swiper-slide-price__repair-services-title-text">
+                            <div class="swiper-slide-price__repair-services-title-text">
+                              Срок
+                            </div>
+                          </div>
+                          <div class="swiper-slide-price__time-text">30-120 мин</div>
+                        </div>
+      
+                        <a href="#" class="swiper-slide-link">Заказать</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide-price">
+                    <div class="swiper-slide-price__item">
+                      <div class="swiper-slide-price__repair-services">
+                        <div class="swiper-slide-price__repair-services-title-text">
+                          <div class="swiper-slide-price__repair-services-title-text">
+                            Ремонтные услуги
+                          </div>
+                        </div>
+                        <div class="swiper-slide-price__repair-services-text">
+                          Диагностика
+                        </div>
+                      </div>
+                      <div class="swiper-slide-price__price">
+                        <div class="swiper-slide-price__repair-services-title-text">
+                          <div class="swiper-slide-price__repair-services-title-text">
+                            Цена
+                          </div>
+                        </div>
+                        <div class="swiper-slide-price__price-text">Бесплатно</div>
+                      </div>
+                      <div class="swiper-slide-price__about-time">
+                        <div class="swiper-slide-price__time">
+                          <div class="swiper-slide-price__repair-services-title-text">
+                            Срок
+                          </div>
+                          <div class="swiper-slide-price__time-text">30 мин</div>
+                        </div>
+      
+                        <a href="#" class="swiper-slide-link">Заказать</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide-price">
+                    <div class="swiper-slide-price__item">
+                      <div class="swiper-slide-price__repair-services">
+                        <div class="swiper-slide-price__repair-services-title-text">
+                          Ремонтные услуги
+                        </div>
+                        <div class="swiper-slide-price__repair-services-text">
+                          Замена дисплея
+                        </div>
+                      </div>
+                      <div class="swiper-slide-price__price">
+                        <div class="swiper-slide-price__repair-services-title-text">
+                          Цена
+                        </div>
+                        <div class="swiper-slide-price__price-text">1 000 ₽</div>
+                      </div>
+                      <div class="swiper-slide-price__about-time">
+                        <div class="swiper-slide-price__time">
+                          <div class="swiper-slide-price__repair-services-title-text">
+                            Срок
+                          </div>
+                          <div class="swiper-slide-price__time-text">30-120 мин</div>
+                        </div>
+      
+                        <a href="#" class="swiper-slide-link">Заказать</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide-price">
+                    <div class="swiper-slide-price__item">
+                      <div class="swiper-slide-price__repair-services">
+                        <div class="swiper-slide-price__repair-services-title-text">
+                          Ремонтные услуги
+                        </div>
+                        <div class="swiper-slide-price__repair-services-text">
+                          Замена полифонического динамика
+                        </div>
+                      </div>
+                      <div class="swiper-slide-price__price">
+                        <div class="swiper-slide-price__repair-services-title-text">
+                          Цена
+                        </div>
+                        <div class="swiper-slide-price__price-text">1 000 ₽</div>
+                      </div>
+                      <div class="swiper-slide-price__about-time">
+                        <div class="swiper-slide-price__time">
+                          <div class="swiper-slide-price__repair-services-title-text">
+                            Срок
+                          </div>
+                          <div class="swiper-slide-price__time-text">30-120 мин</div>
+                        </div>
+      
+                        <a href="#" class="swiper-slide-link">Заказать</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide-price">
+                    <div class="swiper-slide-price__item">
+                      <div class="swiper-slide-price__repair-services">
+                        <div class="swiper-slide-price__repair-services-title-text">
+                          Ремонтные услуги
+                        </div>
+                        <div class="swiper-slide-price__repair-services-text">
+                          Тестирование с выдачей технического заключения
+                        </div>
+                      </div>
+                      <div class="swiper-slide-price__price">
+                        <div class="swiper-slide-price__repair-services-title-text">
+                          Цена
+                        </div>
+                        <div class="swiper-slide-price__price-text">1 000 ₽</div>
+                      </div>
+                      <div class="swiper-slide-price__about-time">
+                        <div class="swiper-slide-price__time">
+                          <div class="swiper-slide-price__repair-services-title-text">
+                            Срок
+                          </div>
+                          <div class="swiper-slide-price__time-text">30-120 мин</div>
+                        </div>
+      
+                        <a href="#" class="swiper-slide-link">Заказать</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+            <p class="main-price-text">
+              Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для получения коммерческого предложения на постоянное обслуживание, оставьте заявку.
+              
+            </p>
+            <a href="#" class="main-price-link">Получить коммерческое предложение
+              <img src="./img/main-price/more.svg"  class = "main-price-link-image"/>
+            </a>
+          </div>
+          <div class="footer">
+            <div class="footer-container">
+              <div class="footer-container__text"><span class="footer-container__text--copyright">© 2019 CPS </span>
+                Разработано командой Apesong
+              </div>
+              <a class="footer-container__text-link">Политика конфиденциальности</a>
+              <div class="footer-container__text">
+                Информация, размещенная на данной странице, не является публичной
+                офертой
+              </div>
+            </div>
+          </div>
+          </div>
+        </main>
+        
+
+      </div>
+
+</body>
+</html>

@@ -1,0 +1,271 @@
+.main-repair-tech {
+    margin-bottom: 24px;
+    // .main-repair-tech__header
+
+    &__header {
+        background-color: var(--bgButton);
+        box-shadow: inset 0 1px 0 0 var(--boxShadow);
+        margin-bottom: 16px;
+    }
+
+    // .main-repair-tech__title
+
+    &__title {
+        padding: 16px;
+        margin: 0;
+        font-family: "TTLakes-Regular";
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        text-transform: uppercase;
+        color: var(--textColorLinks);
+    }
+}
+.repair-tech-container {
+    // .repair-tech-container__list
+
+    &__list {
+        display: none;
+    }
+
+    // .repair-tech-container__list-is-active
+
+    &__list-is-active {
+        max-height: max-content;
+    }
+
+    // .repair-tech-container__item
+
+    &__item {
+    }
+
+    // .repair-tech-container__link
+
+    &__link {
+    }
+
+    // .repair-tech-container__link-go
+
+    &__link-go {
+    }
+
+    // .repair-tech-container__show-more
+
+    &__show-more {
+        display: none;
+    }
+}
+
+.show-more-repair-tech {
+    display: none;
+}
+
+.swiper-repair-tech {
+    padding-left: 16px !important;
+    height: 188px;
+}
+
+.swiper-repair-tech::before {
+    content: "";
+    position: absolute;
+    width: 7.5%;
+    height: 100%;
+    background: linear-gradient(270deg, var(--bgGradientFirstSwiper) 16.84%, var(--bgGradientSecondSwiper) 100%);
+    left: 92.5%;
+    z-index: 2;
+}
+
+.swiper-wrapper-repair-tech {
+}
+
+.swiper-slide-repair-tech {
+    // .swiper-slide-repair-tech__item
+
+    &__item {
+        width: 240px;
+        height: 160px;
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid var(--borderRepair);
+        background-color: var(--bgButton);
+        border-radius: 6px;
+        box-sizing: border-box;
+        padding: 16px;
+    }
+
+    // .swiper-slide-repair-tech__link
+
+    &__link {
+        font-family: "TTLakes-Medium";
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        color: var(--textColor);
+        flex: 1 1 auto;
+    }
+
+    // .swiper-slide-repair-tech__link-go
+
+    &__link-go {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+}
+
+.swiper-pagination {
+    margin: 0 !important;
+    margin-right: 12px !important;
+    opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active {
+    background: var(--bgPaginationActive) !important;
+}
+
+@media (min-width: 768px) {
+    .main-repair-tech {
+        margin-bottom: 32px;
+        // .main-repair-tech__header
+
+        &__header {
+            margin-bottom: 24px;
+        }
+
+        // .main-repair-tech__title
+
+        &__title {
+            padding: 16px 24px;
+            margin: 0;
+        }
+    }
+    .repair-tech-container {
+        // .repair-tech-container__list
+
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+            padding-left: 24px;
+            max-height: 176px;
+            overflow: hidden;
+            margin-bottom: 8px;
+        }
+
+        // .repair-tech-container__list-is-active
+
+        &__list-is-active {
+            max-height: max-content;
+        }
+
+        // .repair-tech-container__item
+
+        &__item {
+            width: 224px;
+            height: 160px;
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid var(--borderRepair);
+            background-color: var(--bgButton);
+            border-radius: 6px;
+            box-sizing: border-box;
+            padding: 16px;
+            margin-right: 24px;
+            margin-bottom: 16px;
+        }
+
+        // .repair-tech-container__link
+
+        &__link {
+            font-family: "TTLakes-Medium";
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: -0.2px;
+            color: var(--textColor);
+            flex: 1 1 auto;
+        }
+
+        // .repair-tech-container__link-go
+
+        &__link-go {
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+        }
+
+        // .repair-tech-container__show-more
+
+        &__show-more {
+            display: flex;
+        }
+    }
+
+    .show-more-repair-tech {
+        display: flex;
+        padding-left: 24px;
+    }
+
+    .swiper-repair-tech {
+        display: none !important;
+    }
+}
+
+@media (min-width: 1440px) {
+    .main-repair-tech {
+        margin-bottom: 50px;
+        // .main-repair-tech__header
+
+        &__header {
+            margin-bottom: 24px;
+        }
+
+        // .main-repair-tech__title
+
+        &__title {
+            padding: 16px 32px;
+            margin: 0;
+        }
+    }
+    .repair-tech-container {
+        // .repair-tech-container__list
+
+        &__list {
+            padding-left: 32px;
+            margin-bottom: 0px;
+        }
+
+        // .repair-tech-container__list-is-active
+
+        &__list-is-active {
+            max-height: max-content;
+        }
+
+        // .repair-tech-container__item
+
+        &__item {
+            width: 240px;
+            height: 160px;
+            margin-right: 32px;
+            margin-bottom: 16px;
+        }
+
+        // .repair-tech-container__link
+
+        &__link {
+        }
+
+        // .repair-tech-container__link-go
+
+        &__link-go {
+        }
+
+        // .repair-tech-container__show-more
+
+        &__show-more {
+            display: flex;
+        }
+    }
+    .show-more-repair-tech {
+        display: flex;
+        padding-left: 32px;
+    }
+}

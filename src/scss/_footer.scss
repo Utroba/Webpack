@@ -1,0 +1,109 @@
+.footer-container {
+    box-shadow: inset 0 1px 0 0 var(--boxShadow);
+    padding: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bgButton);
+
+    // .footer-container__text
+
+    &__text {
+        font-family: "TTLakes-Regular";
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        color: var(--textColorLinks);
+        mix-blend-mode: normal;
+        opacity: 0.72;
+        margin-top: 16px;
+    }
+
+    // .footer-container__text-link
+
+    &__text-link {
+        font-family: "TTLakes-Regular";
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        color: var(--textColorLinks);
+        mix-blend-mode: normal;
+        opacity: 0.72;
+        margin-top: 16px;
+    }
+}
+
+@media (min-width: 768px) {
+    .footer-container {
+        padding: 32px 24px 25px 24px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        background-color: var(--bgButton);
+
+        // .footer-container__text
+
+        &__text {
+            display: flex;
+            flex-direction: column;
+            margin-top: 0;
+        }
+
+        &__text:last-child {
+            text-align: right;
+            max-width: 213px;
+        }
+
+        // .footer-container__text-link
+
+        &__text-link {
+            margin-top: 0;
+        }
+
+        // .footer-container__text--copyright
+
+        &__text--copyright {
+            flex: 1 1 auto;
+            align-self: flex-start;
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    .footer-container {
+        padding: 32px 32px 21px 32px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        background-color: var(--bgButton);
+    
+        // .footer-container__text
+    
+        &__text {
+            display: flex;
+            flex-direction: column;
+            margin-top: 0;
+        }
+
+        &__text:last-child {
+            text-align: right;
+            max-width: 330px;
+        }
+    
+        // .footer-container__text-link
+    
+        &__text-link {
+            margin-top: 0;
+        }
+
+        // .footer-container__text--copyright
+
+        &__text--copyright {
+            flex: 1 1 auto;
+            align-self: flex-start;
+        }
+    }
+}

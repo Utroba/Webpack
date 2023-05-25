@@ -1,0 +1,132 @@
+.main-description {
+    margin-bottom: 24px;
+    // .main-description__text
+
+    &__text {
+        padding-left: 16px;
+    }
+
+    // .main-description__about-us
+
+    &__about-us {
+        white-space: pre-line;
+        margin: 0;
+        margin-bottom: 16px;
+        max-height: 90px;
+        overflow: hidden;
+        font-family: "TTLakes-Regular";
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 0.2px;
+        color: var(--textColor);
+    }
+
+    // .main-description__about-us-all
+
+    &__about-us-all {
+        max-height: max-content;
+    }
+
+    // .main-description__show-more
+
+    &__show-more {
+        padding: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    
+
+    // .main-description__image
+
+    &__image {
+    }
+}
+
+.show-more-description{
+    display: flex;
+    margin-bottom: 16px;
+}
+
+@media (min-width: 768px) {
+    .main-description {
+        display: flex;
+        margin-bottom: 32px;
+        // .main-description__text
+
+        &__text {
+            padding-left: 24px;
+        }
+
+        // .main-description__about-us
+
+        &__about-us {
+            white-space: pre-line;
+            margin: 0;
+            margin-bottom: 10px;
+            margin-right: 48px;
+            max-height: 160px;
+            line-height: 20px;
+        }
+
+        // .main-description__about-us-all
+
+        &__about-us-all {
+            max-height: max-content;
+        }
+
+        // .main-description__show-more
+
+        &__show-more {
+            padding: 0;
+            margin-bottom: 0;
+            display: flex;
+            align-items: center;
+        }
+
+        // .main-description__image
+
+        &__image {
+            padding-right: 24px;
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    .main-description {
+        margin-bottom: 51px;
+        // .main-description__text
+
+        &__text {
+            padding-left: 34px;
+        }
+
+        // .main-description__about-us
+
+        &__about-us {
+            white-space: pre-line;
+            margin: 0;
+            margin-bottom: 13px;
+            margin-right: 36px;
+            overflow: hidden;
+            line-height: 20px;
+        }
+
+        // .main-description__about-us-all
+
+        &__about-us-all {
+            max-height: max-content;
+        }
+
+        // .main-description__show-more
+
+        &__show-more {
+        }
+
+        // .main-description__image
+
+        &__image {
+            padding-right: 28px;
+        }
+    }
+}

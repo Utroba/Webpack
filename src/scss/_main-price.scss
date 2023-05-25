@@ -1,0 +1,374 @@
+.main-price {
+    margin-bottom: 40px;
+    // .main-price__header
+
+    &__header {
+        background-color: var(--bgButton);
+        box-shadow: inset 0 1px 0 0 var(--boxShadow);
+        margin-bottom: 16px;
+    }
+
+    // .main-price__title
+
+    &__title {
+        padding: 16px;
+        margin: 0;
+        font-family: "TTLakes-Regular";
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        text-transform: uppercase;
+        color: var(--textColorLinks);
+    }
+}
+
+.main-price-container {
+    padding-left: 16px;
+    // .main-price-container__services
+
+    &__services {
+        display: none;
+    }
+
+    // .main-price-container__services-title
+
+    &__services-title {
+    }
+
+    // .main-price-container__services-title--text
+
+    &__services-title--text {
+    }
+
+    // .main-price-container__services-about--row
+
+    &__services-about--row {
+    }
+
+    // .main-price-container__services-about--text
+
+    &__services-about--text {
+    }
+}
+
+.swiper-price {
+    height: 236px;
+}
+
+.swiper-wrapper-price {
+}
+
+.swiper-slide-price {
+    // .swiper-slide-price__item
+
+    &__item {
+        width: 260px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background: var(--bgButton);
+        border: 1px solid var(--borderRepair);
+        border-radius: 6px;
+        box-sizing: border-box;
+        padding: 16px;
+    }
+
+    // .swiper-slide-price__repair-services
+
+    &__repair-services {
+    }
+
+    // .swiper-slide-price__repair-services-title-text
+
+    &__repair-services-title-text {
+        font-family: "TTLakes-Regular";
+        font-size: 14px;
+        line-height: 16px;
+        color: var(--textColorLinks);
+        mix-blend-mode: normal;
+        opacity: 0.72;
+    }
+
+    // .swiper-slide-price__repair-services-text
+
+    &__repair-services-text {
+        font-family: "TTLakes-Regular";
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 0.2px;
+        color: var(--textColor);
+        margin-top: 4px;
+    }
+
+    // .swiper-slide-price__price
+
+    &__price {
+    }
+
+    // .swiper-slide-price__price-text
+
+    &__price-text {
+        font-family: "TTLakes-Regular";
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 0.2px;
+        color: var(--textColor);
+        margin-top: 4px;
+    }
+
+    // .swiper-slide-price__about-time
+
+    &__about-time {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    // .swiper-slide-price__time
+
+    &__time {
+    }
+
+    // .swiper-slide-price__time-text
+
+    &__time-text {
+        font-family: "TTLakes-Regular";
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 0.2px;
+        color: var(--textColor);
+        margin-top: 4px;
+    }
+}
+
+.main-price-text {
+    margin: 0;
+    padding-left: 16px;
+    padding-right: 16px;
+    white-space: pre-line;
+    font-family: "TTLakes-Regular";
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: var(--textColor);
+}
+
+.main-price-link-image {
+    vertical-align: middle;
+}
+
+@media (min-width: 768px) {
+    .main-price {
+        margin-bottom: 47px;
+        // .main-price__header
+
+        &__header {
+            margin-bottom: 31px;
+        }
+
+        // .main-price__title
+
+        &__title {
+            padding: 16px 24px;
+        }
+    }
+
+    .main-price-container {
+        padding-left: 24px;
+        padding-right: 24px;
+        // .main-price-container__services
+
+        &__services {
+            display: block;
+            width: 100%;
+            border-radius: 6px;
+        }
+
+        // .main-price-container__services-title
+
+        &__services-title {
+            display: grid;
+            padding: 16px;
+            grid-template-columns: 2fr 0.5fr 0.5fr 119px;
+        }
+
+        // .main-price-container__services-title--text
+
+        &__services-title--text {
+            text-align: left;
+            font-family: "TTLakes-Regular";
+            font-size: 14px;
+            line-height: 16px;
+            color: var(black);
+            mix-blend-mode: normal;
+            opacity: 0.72;
+        }
+
+        // .main-price-container__services-wrapper
+
+        &__services-wrapper{
+            background-color: var(--bgButton);
+            padding-left: 16px;
+            padding-right: 16px;
+            border-radius: 6px;
+        }
+
+        // .main-price-container__services-about--row
+
+        &__services-about--row {
+            display: grid;
+            grid-template-columns: 2fr 0.5fr 0.5fr 119px;
+            
+            
+        }
+
+        &__services-about--row:not(:last-child){
+            border-bottom: 1px solid var(--bgDivider);
+        }
+
+        // .main-price-container__services-about--text
+
+        &__services-about--text {
+            padding-top: 16px;
+            padding-bottom: 16px;
+            display: flex;
+            align-items: center;
+            vertical-align: middle;
+            font-family: "TTLakes-Medium";
+            font-size: 14px;
+            line-height: 18px;
+            letter-spacing: 0.2px;
+            color: var(--textColor);
+            
+        }
+    }
+
+    .swiper-price {
+        display: none !important;
+    }
+
+    .main-price-text {
+        margin: 0;
+        padding-left: 24px;
+        padding-right: 0px;
+        white-space: pre-line;
+        max-width: 421px;
+        box-sizing: content-box;
+    }
+
+    .main-price-link {
+        padding-left: 24px;
+    }
+
+    .main-price-link-image {
+        vertical-align: middle;
+    }
+}
+
+@media (min-width: 1440px) {
+    .main-price {
+        margin-bottom: 50px;
+        // .main-price__header
+
+        &__header {
+            margin-bottom: 31px;
+        }
+
+        // .main-price__title
+
+        &__title {
+            padding: 16px 32px;
+        }
+    }
+
+    .main-price-container {
+        padding-left: 32px;
+        padding-right: 32px;
+        // .main-price-container__services
+
+        &__services {
+            display: block;
+            width: 100%;
+            border-radius: 6px;
+        }
+
+        // .main-price-container__services-title
+
+        &__services-title {
+            display: grid;
+            padding: 16px 24px;
+            grid-template-columns: 2fr 0.5fr 0.5fr 119px;
+        }
+
+        // .main-price-container__services-title--text
+
+        &__services-title--text {
+            text-align: left;
+            font-family: "TTLakes-Regular";
+            font-size: 14px;
+            line-height: 16px;
+            color: var(black);
+            mix-blend-mode: normal;
+            opacity: 0.72;
+        }
+
+        // .main-price-container__services-wrapper
+
+        &__services-wrapper{
+            background-color: var(--bgButton);
+            padding-left: 24px;
+            padding-right: 24px;
+            border-radius: 6px;
+        }
+
+        // .main-price-container__services-about--row
+
+        &__services-about--row {
+            display: grid;
+            grid-template-columns: 2fr 0.5fr 0.5fr 119px;
+            
+            
+        }
+
+        &__services-about--row:not(:last-child){
+            border-bottom: 1px solid var(--bgDivider);
+        }
+
+        // .main-price-container__services-about--text
+
+        &__services-about--text {
+            padding-top: 16px;
+            padding-bottom: 16px;
+            display: flex;
+            align-items: center;
+            vertical-align: middle;
+            font-family: "TTLakes-Medium";
+            font-size: 14px;
+            line-height: 18px;
+            letter-spacing: 0.2px;
+            color: var(--textColor);
+            
+        }
+    }
+
+    .swiper-price {
+        display: none !important;
+    }
+
+    .main-price-text {
+        margin: 0;
+        padding-left: 24px;
+        padding-right: 0px;
+        white-space: pre-line;
+        max-width: 421px;
+        box-sizing: content-box;
+    }
+
+    .main-price-link {
+        padding-left: 24px;
+    }
+
+    .main-price-link-image {
+        vertical-align: middle;
+    }
+}

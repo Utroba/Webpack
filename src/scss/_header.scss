@@ -1,0 +1,202 @@
+body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      overflow-x: hidden;
+      min-width: 320px;
+      background-color: var(--bgBody);
+}
+
+*,
+*::after,
+*::before {
+      box-sizing: border-box;
+}
+
+.wrapper {
+}
+.header {
+      // .header__container
+
+      &__container {
+            display: flex;
+            padding: 18px 16px;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: inset 0 -1px 0 0 var(--boxShadow);
+            margin-bottom: 24px;
+      }
+
+      // .header__burger-logo
+
+      &__burger-logo {
+            display: flex;
+            align-items: center;
+      }
+
+      // .header__burger-btn
+
+      &__burger-btn {
+            margin-right: 16px;
+      }
+
+      // .header__logo
+
+      &__logo {
+            display: flex;
+            align-items: center;
+      }
+
+      &__logo::after {
+            content: "";
+            width: 2px;
+            height: 32px;
+            background-color: var(--bgDivider);
+            margin-left: 16px;
+      }
+
+      // .header__feedback
+
+      &__feedback {
+            display: none;
+      }
+
+      // .header__feedback-call
+
+      &__feedback-call {
+      }
+
+      // .header__feedback-chat
+
+      &__feedback-chat {
+      }
+
+      // .header__feedback-profile
+
+      &__feedback-profile {
+      }
+
+      // .header__repair-check
+
+      &__repair-check {
+            display: flex;
+      }
+
+      // .header__repair-check-repair
+
+      &__repair-check-repair {
+            margin-right: 16px;
+      }
+
+      // .header__repair-check-checkstatus
+
+      &__repair-check-checkstatus {
+      }
+}
+
+@media (min-width: 768px) {
+      .header {
+            // .header__container
+
+            &__container {
+                  padding: 18px 24px;
+                  margin-bottom: 24px;
+            }
+
+            // .header__burger-logo
+
+            &__burger-logo {
+                  flex: 1 1 auto;
+            }
+
+            // .header__burger-btn
+
+            &__burger-btn {
+                  margin-right: 20px;
+            }
+
+            // .header__logo
+
+            &__logo {
+            }
+
+            &__logo::after {
+                  display: none;
+            }
+
+            &__logo::before{
+                  content: "";
+                  width: 2px;
+                  height: 32px;
+                  background-color: var(--bgDivider);
+                  margin-right: 20px;  
+            }
+
+            // .header__feedback
+
+            &__feedback {
+                  display: flex;
+                  align-items: center;
+            }
+
+            &__feedback::after {
+                  content: "";
+                  width: 2px;
+                  height: 32px;
+                  background-color: var(--bgDivider);
+                  margin-right: 20px;
+            }
+
+            // .header__feedback-call
+
+            &__feedback-call {
+                  margin-right: 16px;
+            }
+
+            // .header__feedback-chat
+
+            &__feedback-chat {
+                  margin-right: 16px;
+            }
+
+            // .header__feedback-profile
+
+            &__feedback-profile {
+                  margin-right: 20px;
+            }
+
+            // .header__repair-check
+
+            &__repair-check {
+                  display: flex;
+            }
+
+            // .header__repair-check-repair
+
+            &__repair-check-repair {
+                  margin-right: 16px;
+            }
+
+            // .header__repair-check-checkstatus
+
+            &__repair-check-checkstatus {
+            }
+      }
+}
+
+@media (min-width: 1440px) {
+      
+.wrapper {
+      display: grid;
+      grid-template-columns: 320px 1fr;
+}
+.header {
+      background: var(--bgButton);
+      // .header__container
+
+      &__container {
+            display: none;
+      }
+}
+
+}

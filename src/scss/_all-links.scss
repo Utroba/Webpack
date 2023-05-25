@@ -1,0 +1,42 @@
+a {
+    text-decoration: none !important;
+}
+
+
+.swiper-slide-link {
+    display: flex;
+    width: 119px;
+    height: 32px;
+    align-self: flex-end;
+    padding: 4px 40px 4px 12px;
+    text-decoration: none;
+    background-color: var(--bgSwiperLink);
+    border-radius: 16px;
+    font-family: "TTLakes-Medium";
+    font-size: 12px;
+    line-height: 24px;
+    text-align: right;
+    letter-spacing: -0.15px;
+    text-transform: uppercase;
+    color: var(--bgButton);
+}
+
+.swiper-slide-link::after {
+    content: "";
+    background-image: url(./img/main-price/goside.svg);
+    min-width: 24px;
+    height: 24px;
+    margin-left: 8px;
+}
+
+.main-price-link {
+    padding-left: 16px;
+    padding-right: 16px;
+    text-decoration: none;
+    display: block;
+    font-family: "TTLakes-Bold";
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: var(--textColor);
+}

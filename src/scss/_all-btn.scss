@@ -1,0 +1,44 @@
+.header-btn {
+    width: 40px;
+    height: 40px;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+}
+
+.show-more-btn {
+    border: none;
+    background-color: var(--bgBody);
+    font-family: "TTLakes-Medium";
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: var(--textColor);
+}
+
+.modal-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 136px;
+    height: 32px;
+    border: none;
+    align-self: flex-end;
+    background: var(--bgSwiperLink);
+    border-radius: 16px;
+    font-family: "TTLakes-Medium";
+    font-size: 12px;
+    line-height: 24px;
+    text-align: right;
+    letter-spacing: -0.15px;
+    text-transform: uppercase;
+    color: var(--bgButton);
+}
+
+.show-more{
+    display: flex;
+}
+
+.show-more-expand{
+    margin-right: 8px;
+}

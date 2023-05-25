@@ -1,0 +1,235 @@
+.main-repair-brand {
+    margin-bottom: 24px;
+    // .main-repair-brand__header
+
+    &__header {
+        background-color: var(--bgButton);
+        box-shadow: inset 0 1px 0 0 var(--boxShadow);
+        margin-bottom: 16px;
+    }
+
+    // .main-repair-brand__title
+
+    &__title {
+        padding: 16px;
+        margin: 0;
+        font-family: "TTLakes-Regular";
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        text-transform: uppercase;
+        color: var(--textColorLinks);
+    }
+}
+.repair-brand-container {
+    // .repair-brand-container__list
+
+    &__list {
+        display: none;
+    }
+
+    // .repair-brand-container__item
+
+    &__item {
+    }
+
+    // .repair-brand-container__link
+
+    &__link {
+    }
+
+    // .repair-brand-container__show-more
+
+    &__show-more {
+        display: none;
+    }
+}
+
+.show-more-repair-brand{
+    display: none;
+}
+
+.swiper-repair-brand {
+    padding-left: 16px !important;
+    height: 100px;
+}
+
+.swiper-repair-brand::before {
+    content: "";
+    position: absolute;
+    width: 7.5%;
+    height: 100%;
+    background: linear-gradient(270deg, var(--bgGradientFirstSwiper) 16.84%, var(--bgGradientSecondSwiper) 100%);
+    left: 92.5%;
+    z-index: 2;
+}
+
+.swiper-wrapper-repair-brand {
+}
+
+.swiper-slide-repair-brand {
+    // .swiper-slide-repair-brand__item
+
+    &__item {
+        border: 1px solid var(--borderRepair);
+        background-color: var(--bgButton);
+        border-radius: 6px;
+    }
+
+    // .swiper-slide-repair-brand__link
+
+    &__link {
+        max-width: 240px;
+        padding: 16px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.swiper-pagination-bullet {
+    margin: 0 !important;
+    margin-right: 12px !important;
+    background-color: var(--bgPagination) !important;
+    opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active {
+    background: var(--bgPaginationActive) !important;
+}
+
+@media (min-width: 768px) {
+    .main-repair-brand {
+        margin-bottom: 32px;
+        // .main-repair-brand__header
+    
+        &__header {
+            margin-bottom: 24px;
+        }
+    
+        // .main-repair-brand__title
+    
+        &__title {
+            padding: 16px 24px;
+            margin: 0;
+        }
+    }
+    .repair-brand-container {
+        // .repair-brand-container__list
+    
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            padding-left: 24px;
+            margin-bottom: 8px;
+            max-height: 176px;
+            overflow: hidden;
+        }
+
+        // .repair-brand-container__list
+
+        &__list-is-active{
+            max-height: max-content;
+        }
+    
+        // .repair-brand-container__item
+    
+        &__item {   
+            border: 1px solid var(--borderRepair);
+            background-color: var(--bgButton);
+            border-radius: 6px;
+            margin-right: 24px;
+            margin-bottom: 16px;
+            min-width: 224px;
+        }
+    
+        // .repair-brand-container__link
+    
+        &__link {
+            padding: 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    
+        // .repair-brand-container__show-more
+    
+        &__show-more {
+            display: flex;
+        }
+    }
+    .show-more-repair-brand{
+        display: flex;
+        padding-left: 24px;
+    }
+    .swiper-repair-brand {
+        display: none !important;
+    }
+}
+
+@media (min-width: 1440px) {
+    .main-repair-brand {
+        margin-bottom: 50px;
+        // .main-repair-brand__header
+    
+        &__header {
+            margin-bottom: 24px;
+        }
+    
+        // .main-repair-brand__title
+    
+        &__title {
+            padding: 16px 32px;
+            margin: 0;
+        }
+    }
+    .repair-brand-container {
+        // .repair-brand-container__list
+    
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            padding-left: 32px;
+            margin-bottom: 8px;
+            max-height: 176px;
+            overflow: hidden;
+        }
+
+        // .repair-brand-container__list
+
+        &__list-is-active{
+            max-height: max-content;
+        }
+    
+        // .repair-brand-container__item
+    
+        &__item {   
+            border: 1px solid var(--borderRepair);
+            background-color: var(--bgButton);
+            border-radius: 6px;
+            margin-right: 32px;
+            margin-bottom: 16px;
+            min-width: 240px;
+        }
+    
+        // .repair-brand-container__link
+    
+        &__link {
+            padding: 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    
+        // .repair-brand-container__show-more
+    
+        &__show-more {
+            display: flex;
+        }
+    }
+    .show-more-repair-brand{
+        padding-left: 32px;
+    }
+}
